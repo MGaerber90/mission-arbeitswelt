@@ -81,6 +81,13 @@ input[type=text],textarea,select{font:inherit;padding:9px 11px;border:1px solid 
 .matrow .lbl{font-weight:700}
 .chip{display:inline-flex;align-items:center;gap:4px;border:1px solid var(--line);background:#faf9f5;border-radius:999px;padding:3px 11px;font-size:.86rem;cursor:pointer;text-decoration:none;color:var(--ink);font-family:inherit}
 .chip:hover{background:#fff3d1}
+.howto{background:#f4f7fb;border-radius:10px;padding:8px 12px;font-size:.9rem;margin-bottom:6px}.howto ul{margin:4px 0 0 0;padding-left:18px}.howto li{margin:2px 0}
+.task.treff{border:2px dashed #e0a800;background:#fffaf0}
+.treffhint{font-size:.85rem;background:#ffe9b8;color:#5c3d00;border-radius:8px;padding:6px 10px;margin:6px 0 2px}
+.bsp{margin-top:8px;font-size:.88rem;background:#eef6ff;border-left:4px solid #2f6fb3;border-radius:6px;padding:6px 10px}
+.card.extra{border:2px solid #b9a6e6;background:#faf7ff}
+.xtra{background:#fff;border:1px solid #e3d9f6;border-radius:10px;padding:8px 12px;margin:8px 0;font-size:.92rem}.xtra .xt{display:block;font-weight:700;color:#5b2c85;margin-bottom:2px}
+.stufe{border-radius:8px;padding:6px 10px;margin:0 0 6px}.stufe.s1{background:#f3e3d3}.stufe.s2{background:#fff1c2}.stufe.s3{background:#dcecff}.stufe.s4{background:#e2f3e9}
 .produkt{margin-top:8px;font-size:.9rem;background:#f4f2ec;border-radius:8px;padding:6px 10px}
 .produkt::before{content:"📦 Das zeigst du am Ende: ";font-weight:700}
 .unlock{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
@@ -357,6 +364,11 @@ Mein Fazit (2 Sätze): Ich habe erfahren, dass …</div><p class="small muted">J
 {id:"M2-3", m:"m2", typ:"Infotext", title:"bpb Lexikon in Einfacher Sprache: Industrialisierung", url:"https://www.bpb.de/kurz-knapp/lexika/lexikon-in-einfacher-sprache/328544/industrialisierung-industrielle-revolution/", hint:"Leicht verständlich – gut für Arbeit 1.0 und 2.0"},
 {id:"M2-4", m:"m2", typ:"Film", title:"musstewissen Geschichte: Wie verlief die Industrielle Revolution?", url:"https://www.youtube.com/results?search_query=musstewissen+Wie+verlief+die+Industrielle+Revolution", hint:"YouTube – öffnet die Suche, nimm das Video von musstewissen Geschichte"},
 {id:"M2-5", m:"m2", typ:"Vorlage", title:"Prompt-Baukasten für das KI-Bild", html:`<div class="prompt">Ein realistisches Bild im Stil eines alten Fotos: eine Arbeiterin oder ein Arbeiter im Jahr [JAHR] in einer [Fabrik / Werkstatt / Büro / Lagerhalle]. Sie oder er arbeitet an [MASCHINE / WERKZEUG]. Die Stimmung ist [laut / dunkel / staubig / modern / hell]. Blick von der Seite.</div><p class="small">Setze für die eckigen Klammern eure Ergebnisse aus der Recherche ein. Probiert 2–3 Versionen aus und nehmt die beste.</p>`},
+{id:"M2-6", m:"m2", typ:"Stufenkarte", title:"Stufenkarte Arbeit 1.0 (ab ca. 1780)", html:`<p class="stufe s1"><b>⚙️ Arbeit 1.0 – Die Dampfmaschine</b></p><ul><li><b>Zeit:</b> ab ca. 1780 bis ca. 1870</li><li><b>Neue Technik:</b> die <b>Dampfmaschine</b> und der mechanische <b>Webstuhl</b>. Die Dampfmaschine treibt viele Maschinen gleichzeitig an.</li><li><b>Wo arbeiten die Menschen?</b> Früher arbeiteten die meisten auf dem Bauernhof oder als Handwerker zu Hause. Jetzt entstehen <b>Fabriken</b>. Viele Menschen ziehen vom Land in die Städte.</li><li><b>Ein Arbeitstag:</b> 12 bis 16 Stunden, 6 Tage in der Woche. Es ist laut, staubig und gefährlich. Schon Kinder ab 6 Jahren arbeiten in Fabriken und Bergwerken.</li><li><b>Gut:</b> Waren wie Stoffe werden schneller und billiger hergestellt.</li><li><b>Schlecht:</b> sehr wenig Lohn, viele Unfälle, keine Krankenversicherung. Handweber verlieren ihre Arbeit, weil die Maschinen schneller sind.</li><li><b>Berufe:</b> neu: Fabrikarbeiter/in, Heizer an der Dampfmaschine · weniger: Handweber/in</li></ul>`},
+{id:"M2-7", m:"m2", typ:"Stufenkarte", title:"Stufenkarte Arbeit 2.0 (ab ca. 1870)", html:`<p class="stufe s2"><b>💡 Arbeit 2.0 – Strom und Fließband</b></p><ul><li><b>Zeit:</b> ab ca. 1870 bis ca. 1970</li><li><b>Neue Technik:</b> <b>elektrischer Strom</b>, Elektromotoren, elektrisches Licht – und das <b>Fließband</b>.</li><li><b>Wo arbeiten die Menschen?</b> In großen Fabriken. 1913 lässt Henry Ford in den USA Autos am Fließband bauen. Ein Auto ist dann in etwa 1,5 Stunden fertig statt in über 12 Stunden. Das nennt man <b>Massenproduktion</b>.</li><li><b>Ein Arbeitstag:</b> Jeder Arbeiter macht den ganzen Tag denselben Handgriff (<b>Arbeitsteilung</b>). Seit 1918 gilt in Deutschland der <b>8-Stunden-Tag</b>.</li><li><b>Gut:</b> Autos, Radios und Kühlschränke werden so billig, dass viele Familien sie kaufen können. Es gibt Kranken- und Unfallversicherung.</li><li><b>Schlecht:</b> Die Arbeit ist sehr eintönig und anstrengend. Wer zu langsam ist, hält das ganze Band auf.</li><li><b>Berufe:</b> neu: Elektriker/in, Fließbandarbeiter/in · weniger: Kutscher/in</li></ul>`},
+{id:"M2-8", m:"m2", typ:"Stufenkarte", title:"Stufenkarte Arbeit 3.0 (ab ca. 1970)", html:`<p class="stufe s3"><b>🖥️ Arbeit 3.0 – Computer und Roboter</b></p><ul><li><b>Zeit:</b> ab ca. 1970 bis ca. 2010</li><li><b>Neue Technik:</b> <b>Computer</b>, Mikrochips und <b>Industrieroboter</b>. Maschinen arbeiten nach einem Programm.</li><li><b>Wo arbeiten die Menschen?</b> In der Fabrik übernehmen Roboter das Schweißen und Lackieren von Autos (<b>Automatisierung</b>). Im Büro ersetzt der Computer die Schreibmaschine.</li><li><b>Ein Arbeitstag:</b> Weniger schwere körperliche Arbeit. Viele Menschen sitzen am Bildschirm oder überwachen Maschinen.</li><li><b>Gut:</b> Gefährliche und schwere Arbeiten machen jetzt Maschinen.</li><li><b>Schlecht:</b> Viele einfache Arbeitsplätze fallen weg. Firmen lassen in Ländern produzieren, in denen die Löhne niedriger sind (<b>Globalisierung</b>) – Fabriken in Deutschland schließen.</li><li><b>Berufe:</b> neu: Informatiker/in, Mechatroniker/in (Ausbildungsberuf seit 1998) · weniger: Schriftsetzer/in, Hilfsarbeiter/in</li></ul>`},
+{id:"M2-9", m:"m2", typ:"Stufenkarte", title:"Stufenkarte Arbeit 4.0 (heute)", html:`<p class="stufe s4"><b>📶 Arbeit 4.0 – Alles ist vernetzt</b></p><ul><li><b>Zeit:</b> heute (der Begriff „Industrie 4.0“ ist seit 2011 bekannt)</li><li><b>Neue Technik:</b> Internet, Smartphone, Sensoren und <b>künstliche Intelligenz (KI)</b>. Maschinen „sprechen“ miteinander: Eine Maschine meldet selbst, wenn ein Teil bald kaputtgeht.</li><li><b>Wo arbeiten die Menschen?</b> In vernetzten Fabriken, im Büro, im <b>Homeoffice</b> oder unterwegs. Viele Aufträge kommen über eine App (<b>Online-Plattformen</b>, z. B. Lieferdienste).</li><li><b>Ein Arbeitstag:</b> oft flexible Arbeitszeiten, Videokonferenzen, E-Mails auf dem Handy.</li><li><b>Gut:</b> Man kann manchmal von zu Hause arbeiten und Familie und Beruf leichter verbinden. KI nimmt langweilige Routinearbeit ab.</li><li><b>Schlecht:</b> Viele sind ständig erreichbar – das macht Stress. Man muss immer wieder Neues lernen.</li><li><b>Berufe:</b> neu: Kaufmann/-frau im E-Commerce (seit 2018), App-Entwickler/in · weniger: Kassierer/in, Sachbearbeiter/in für Routineaufgaben</li></ul>`},
+{id:"M2-10", m:"m2", typ:"Vorlage", title:"Stufen-Steckbrief (7 Zeilen)", html:`<table class="data"><tr><th colspan="2">Steckbrief: Arbeit ___</th></tr><tr><td>1. Zeit</td><td>von … bis …</td></tr><tr><td>2. Neue Technik (2 Dinge)</td><td></td></tr><tr><td>3. Wo arbeiten die Menschen?</td><td></td></tr><tr><td>4. So sieht ein Arbeitstag aus</td><td>Wie lange? Was macht man?</td></tr><tr><td>5. Das war gut</td><td></td></tr><tr><td>6. Das war schlecht</td><td></td></tr><tr><td>7. Neue Berufe / Berufe, die weniger werden</td><td></td></tr></table><p class="small">Schreibe in Stichpunkten. Die Antworten findest du in eurer Stufenkarte.</p>`},
 
 /* --- Mission 3 --- */
 {id:"M3-1", m:"m3", typ:"Film", title:"Just in time – kurz erklärt", url:"https://studyflix.de/kaufmaennisches/just-in-time-1629", hint:"Falls du Station 2 im Rätsel noch nicht verstehst"},
@@ -479,29 +491,40 @@ const MISSIONS = [
  leitfrage:"Warum arbeiten Menschen – und ist jede Arbeit gleich viel wert?",
  info:`<p><b>Arbeit</b> heißt: Ein Mensch tut etwas, um etwas herzustellen oder um etwas für andere zu leisten. Es gibt <b>Erwerbsarbeit</b> (bezahlt), <b>Haus- und Familienarbeit</b> (unbezahlt, z. B. kochen, Kinder betreuen) und das <b>Ehrenamt</b> (freiwillig, unbezahlt, für andere).</p><p>Menschen arbeiten aus vielen Gründen – nicht nur wegen des Geldes. Welche das sind, findest du in dieser Mission heraus.</p>`,
  tasks:[
-  {t:"Ist das Arbeit? – Abstimmung", f:"plenum", steps:["Deine Lehrkraft zeigt dir nacheinander 6 Bildkarten.","Stimme mit dem Daumen ab: 👍 Das ist Arbeit · 👎 Das ist keine Arbeit · ✊ Ich weiß nicht.","Wenn du drankommst: Begründe deine Meinung in einem Satz.","Schreibe danach die drei Formen der Arbeit mit je einem Beispiel in dein digitales Heft."], mat:["M1-1","M1-2"], p:"3 Formen der Arbeit mit je 1 Beispiel"},
-  {t:"Film gemeinsam: Filmdetektive", f:"plenum", steps:["Lies vor dem Film die Liste „9 Gründe, warum Menschen arbeiten“.","Lege in deinem Heft eine Tabelle mit drei Spalten an: <i>Person im Film | Was arbeitet sie? | Welcher Grund aus der Liste passt?</i>","Ihr schaut den Film gemeinsam am Beamer. Mach dir währenddessen Notizen.","Füll danach mit deinem Team die Tabelle für <b>drei</b> Personen aus dem Film aus."], mat:["M1-3","M1-4"], p:"Tabelle mit 3 Personen"},
-  {t:"Diamond-Ranking", f:"partner", steps:["Zeichnet eine Raute aus 9 Kästchen: oben 1 – dann 2 – dann 3 – dann 2 – unten 1.","Schreibt die 9 Gründe aus der Liste in die Kästchen. Ganz oben steht der Grund, der euch am <b>wichtigsten</b> ist, ganz unten der <b>unwichtigste</b>.","Schreibt zwei ganze Sätze: <i>„Ganz oben steht …, weil …“</i> und <i>„Ganz unten steht …, weil …“</i>"], mat:["M1-3"], p:"Raute + 2 Begründungssätze"},
-  {t:"Interview zu Hause", f:"zuhause", steps:["Such dir eine erwachsene Person aus deiner Familie oder deinem Umfeld, die arbeitet.","Stelle ihr die 4 Fragen aus der Interview-Vorlage und mach dir Notizen.","Tippe das Interview in deinem digitalen Heft ab – genau wie in der Vorlage, in ganzen Sätzen.","Schreibe am Ende dein Fazit in 2 Sätzen."], mat:["M1-5","M1-3"], p:"Abgetipptes Interview mit Fazit"}
+  {t:"Ist das Arbeit? – Deine Meinung zuerst", f:"allein", steps:["Öffne die 6 Bildkarten und den Infotext „Formen der Arbeit“.","Schreibe für jede Karte eine Zeile in dein Heft: <b>Nummer – Arbeit ja/nein – welche Form?</b> (Erwerbsarbeit, Haus- und Familienarbeit, Ehrenamt oder keine Arbeit)","Begründe jede Zeile kurz mit „weil …“."], bsp:"1 – ja – Erwerbsarbeit, weil die Pflegekraft dafür Geld bekommt.", mat:["M1-1","M1-2"], p:"Liste mit 6 Zeilen"},
+  {t:"Abstimmung: Ist das Arbeit?", f:"plenum", steps:["Deine Lehrkraft zeigt die Bildkarten. Stimme mit dem Daumen ab: 👍 Arbeit · 👎 keine Arbeit · ✊ weiß nicht.","Wenn du drankommst: Lies deine Begründung vor.","Danach: Verbessere deine Liste mit einer anderen Farbe, wenn du deine Meinung geändert hast."], mat:["M1-1"], p:"Liste mit Verbesserungen in anderer Farbe"},
+  {t:"Diamond-Ranking: Warum arbeiten Menschen?", f:"partner", steps:["Lest die Liste „9 Gründe, warum Menschen arbeiten“.","Zeichnet eine Raute aus 9 Kästchen: oben 1 – dann 2 – dann 3 – dann 2 – unten 1.","Schreibt die 9 Gründe in die Kästchen: ganz oben der <b>wichtigste</b>, ganz unten der <b>unwichtigste</b> Grund.","Schreibt zwei ganze Sätze dazu."], bsp:"Ganz oben steht „Lebensunterhalt sichern“, weil man ohne Geld keine Miete zahlen kann. Ganz unten steht …, weil …", mat:["M1-3"], p:"Raute + 2 Begründungssätze"},
+  {t:"Film gemeinsam: Filmdetektive", f:"plenum", steps:["<b>Schon vorher vorbereiten:</b> Lege in deinem Heft eine Tabelle mit drei Spalten an: <i>Person im Film | Was arbeitet sie? | Welcher Grund aus der Liste passt?</i>","Ihr schaut den Film gemeinsam am Beamer. Notiere währenddessen Stichpunkte.","Direkt nach dem Film: Füll die Tabelle für <b>drei</b> Personen aus dem Film aus."], mat:["M1-3","M1-4"], p:"Tabelle mit 3 Personen"},
+  {t:"Interview zu Hause", f:"zuhause", steps:["Such dir eine erwachsene Person aus deiner Familie oder deinem Umfeld, die arbeitet.","Stelle ihr die 4 Fragen aus der Interview-Vorlage und mach dir Notizen.","Tippe das Interview in deinem digitalen Heft ab – genau wie in der Vorlage, in ganzen Sätzen.","Schreibe am Ende dein Fazit in 2 Sätzen: Welche Gründe aus der Liste nennt die Person?"], mat:["M1-5","M1-3"], p:"Abgetipptes Interview mit Fazit"}
+ ],
+ extra:[
+  {t:"Mein unsichtbarer Arbeitstag", x:"Schreibe auf, welche <b>unbezahlte</b> Arbeit du gestern gemacht hast (mindestens 3 Dinge, z. B. Tisch abräumen, auf Geschwister aufpassen) und wie lange ungefähr. Rechne: Wie viel Geld wäre das mit dem Mindestlohn von 13,90 € pro Stunde?"},
+  {t:"Die 7. Bildkarte", x:"Erfinde eine eigene Bildkarte, bei der man lange streiten kann, ob es Arbeit ist (z. B. ein Gamer, der Turniere spielt). Schreibe sie in einem Satz auf und begründe in einem zweiten Satz, warum das ein Streitfall ist."},
+  {t:"Arbeit in 3 Wörtern", x:"Was bedeutet Arbeit für dich? Wähle 3 Gründe aus der Liste und schreibe zu jedem ein Beispiel aus deinem späteren Wunschberuf."}
  ],
  netz:["Erwerbsarbeit","Haus- und Familienarbeit","Ehrenamt","Lebensunterhalt","Selbstwertgefühl"],
  arg:"Ist Arbeit nur zum Geldverdienen da? Halte ein Argument fest."
 },
 {
- id:"m2", teil:1, nr:2, emo:"⏳", title:"Zeitreise: Arbeit 1.0 bis 4.0",
+ id:"m2", teil:1, nr:2, emo:"⏳", title:"Zeitreise: Arbeit 1.0 bis 4.0", widget:"zeit",
  leitfrage:"Wie hat sich die Arbeit seit der Dampfmaschine verändert?",
  info:`<table class="data">
 <tr><th>Stufe</th><th>Wann?</th><th>Was ist neu?</th></tr>
-<tr><td><b>Arbeit 1.0</b></td><td>ab Ende des 18. Jh.</td><td><b>Dampfmaschine</b>, erste <b>Fabriken</b>. Aus Handarbeit wird Maschinenarbeit. Lange Arbeitstage, auch Kinderarbeit.</td></tr>
-<tr><td><b>Arbeit 2.0</b></td><td>19. Jh. bis Anfang 20. Jh.</td><td><b>Industrialisierung</b> mit Strom und <b>Fließband</b> → <b>Massenproduktion</b>. Jeder macht immer den gleichen Handgriff.</td></tr>
+<tr><td><b>Arbeit 1.0</b></td><td>ab ca. 1780</td><td><b>Dampfmaschine</b>, erste <b>Fabriken</b>. Aus Handarbeit wird Maschinenarbeit. Lange Arbeitstage, auch Kinderarbeit.</td></tr>
+<tr><td><b>Arbeit 2.0</b></td><td>ab ca. 1870</td><td><b>Industrialisierung</b> mit Strom und <b>Fließband</b> → <b>Massenproduktion</b>. Jeder macht immer den gleichen Handgriff.</td></tr>
 <tr><td><b>Arbeit 3.0</b></td><td>ab ca. 1970</td><td><b>Computer</b>, Roboter → <b>Automatisierung</b>. Firmen produzieren weltweit → <b>Globalisierung</b>.</td></tr>
 <tr><td><b>Arbeit 4.0</b></td><td>heute</td><td><b>Vernetzung</b>: Maschinen, Computer und Menschen sind über das Internet verbunden. Dazu <b>KI</b>, Homeoffice, Online-Plattformen.</td></tr></table>`,
  tasks:[
-  {t:"Einstieg: Der Zeitstrahl", f:"plenum", steps:["Schaut euch gemeinsam den Zeitstrahl an.","Deine Lehrkraft teilt euch in 2er- oder 3er-Teams ein. Jedes Team bekommt eine Stufe: 1.0, 2.0, 3.0 oder 4.0."], mat:["M2-1"]},
-  {t:"Eure Stufe erforschen", f:"partner", steps:["Lest die Info-Tabelle oben zu eurer Stufe.","Nutzt dazu einen Film oder den Lexikon-Text (für 1.0 und 2.0 passt der Lexikon-Text, für 3.0 und 4.0 der Terra-X-Film).","Beantwortet in eurem Heft diese 4 Fragen in Stichpunkten: <b>Wann?</b> · <b>Welche Maschinen oder Technik?</b> · <b>Wie sah ein Arbeitstag aus?</b> · <b>Was war gut, was war schlecht?</b>"], mat:["M2-2","M2-3","M2-4"], p:"4 Antworten in Stichpunkten"},
-  {t:"KI-Bild erstellen und prüfen", f:"partner", steps:["Öffnet das KI-Bildtool der Schule.","Kopiert den Prompt-Baukasten und setzt eure Ergebnisse ein (Jahr, Ort, Maschine, Stimmung).","Erstellt 2–3 Bilder und wählt das beste aus.","Prüft kritisch: Was stimmt auf dem Bild <b>nicht</b>? (z. B. moderne Dinge im Jahr 1850, zu saubere Fabrik, keine Kinder …) Schreibt mindestens einen Fehler auf."], mat:["M2-5"], p:"KI-Bild + 1 gefundener Fehler"},
-  {t:"Ein Tag als …", f:"partner", steps:["Schreibt drei Sätze in der Ich-Form zu eurem Bild.","Satz 1: <i>„Ich bin … Jahre alt und arbeite im Jahr … als …“</i>","Satz 2: <i>„Mein Arbeitstag beginnt um … und …“</i>","Satz 3: <i>„Am schlimmsten / am besten an meiner Arbeit ist …“</i>"], p:"3 Sätze"},
-  {t:"Galerierundgang", f:"plenum", steps:["Alle Bilder werden am Board gezeigt. Jedes Team liest seine 3 Sätze vor.","Ergänzt in eurem Heft einen eigenen Zeitstrahl 1.0 – 4.0 mit <b>je zwei Stichworten</b> pro Stufe."], mat:["M2-1"], p:"Zeitstrahl mit je 2 Stichworten"}
+  {t:"Zeitstrahl-Puzzle", f:"allein", steps:["Lies die Info-Tabelle oben.","Löse das Puzzle weiter unten: Ordne jede der 12 Karten der richtigen Stufe zu, bis alle 12 grün sind.","Zeichne in dein Heft einen Zeitstrahl mit vier Abschnitten: 1.0 · 2.0 · 3.0 · 4.0.","Schreibe zu jeder Stufe die <b>Zeit</b> und <b>zwei Stichworte</b> aus dem Puzzle."], bsp:"Arbeit 1.0 – ab ca. 1780 – Dampfmaschine, Kinderarbeit", p:"Puzzle 12 von 12 + eigener Zeitstrahl"},
+  {t:"Expertenteam: Stufen-Steckbrief", f:"partner", steps:["Tragt euer Team an der Tafel bei einer Stufe ein (1.0, 2.0, 3.0 oder 4.0). Jede Stufe soll ungefähr gleich oft vorkommen.","Öffnet die <b>Stufenkarte</b> für eure Stufe und lest sie genau.","Übertragt den Steckbrief in euer Heft und füllt <b>alle 7 Zeilen</b> aus. Die Antworten stehen in der Stufenkarte."], mat:["M2-6","M2-7","M2-8","M2-9","M2-10"], p:"Steckbrief mit 7 ausgefüllten Zeilen"},
+  {t:"KI-Bild erstellen und prüfen", f:"partner", steps:["Öffnet das KI-Bildtool der Schule.","Kopiert den Prompt-Baukasten und setzt Infos aus eurem Steckbrief ein (Jahr, Ort, Maschine, Stimmung).","Erstellt 2–3 Bilder und wählt das beste aus.","Vergleicht das Bild mit eurer Stufenkarte: Was stimmt auf dem Bild <b>nicht</b>? Schreibt mindestens einen Fehler auf."], bsp:"Fehler: Die Arbeiterin trägt eine Armbanduhr aus Plastik – die gab es um 1850 noch nicht.", mat:["M2-5"], p:"KI-Bild + mindestens 1 gefundener Fehler"},
+  {t:"Ein Tag als …", f:"partner", steps:["Schreibt drei Sätze in der Ich-Form zu eurem Bild. Nutzt die Infos aus eurem Steckbrief.","Satz 1: <i>„Ich bin … Jahre alt und arbeite im Jahr … als …“</i>","Satz 2: <i>„Mein Arbeitstag beginnt um … und dauert …“</i>","Satz 3: <i>„Am schlimmsten / am besten an meiner Arbeit ist …“</i>"], p:"3 Sätze in der Ich-Form"},
+  {t:"Zeitreise-Show", f:"plenum", steps:["Alle Bilder werden am Board gezeigt. Jedes Team zeigt sein Bild und liest seine 3 Sätze vor (1 Minute).","Hör bei den anderen Stufen genau zu.","Ergänze in deinem Zeitstrahl bei <b>jeder anderen Stufe eine neue Information</b>."], p:"Zeitstrahl mit 3 neuen Infos"}
+ ],
+ extra:[
+  {t:"Film-Fakten", x:"Schau das Video „Wie verlief die Industrielle Revolution?“ von musstewissen Geschichte (Material). Schreibe 3 Fakten auf, die <b>nicht</b> in den Stufenkarten stehen."},
+  {t:"Arbeit 5.0", x:"Wie arbeiten die Menschen im Jahr 2050? Schreibe 3 Vermutungen, jede als Satz: <i>„Ich glaube, dass …, weil …“</i>"},
+  {t:"Quiz für die Klasse", x:"Schreibe 3 Quizfragen zu deiner Stufe mit je 3 Antworten (eine richtig). Tausche mit einem Team, das eine andere Stufe hatte."}
  ],
  netz:["Arbeit 1.0 (Dampfmaschine)","Fließband / Massenproduktion","Automatisierung","Arbeit 4.0 (Vernetzung)"],
  arg:"War Arbeit früher härter, oder ist sie heute stressiger? Halte ein Argument fest."
@@ -511,25 +534,36 @@ const MISSIONS = [
  leitfrage:"Was treibt den Wandel der Arbeitswelt an?",
  info:`<p>Die Arbeitswelt verändert sich nicht zufällig. Es gibt <b>Treiber</b>, also Dinge, die den Wandel antreiben. In 7 Stationen lernst du sie kennen. Jede richtige Antwort verrät einen Buchstaben – am Ende ergibt sich ein Lösungswort.</p>`,
  tasks:[
-  {t:"Escape-Rätsel lösen", f:"partner", steps:["Scrollt nach unten zu den 7 Stationen.","Lest bei jeder Station zuerst den Infotext, dann beantwortet die Frage.","Schreibt zu jedem Begriff eine kurze Erklärung (1 Satz) in euer Heft.","Findet das Lösungswort und flüstert es eurer Lehrkraft zu."], mat:["M3-1"], p:"7 Begriffe mit je 1 Satz + Lösungswort"},
-  {t:"Der Weg deiner Online-Bestellung", f:"partner", steps:["Öffnet die Karten „Der Weg deiner Online-Bestellung“. Die 7 Schritte sind durcheinander.","Bringt sie in die richtige Reihenfolge – vom Nähen der Sneaker bis zur Haustür. Schreibt die Buchstaben in der richtigen Reihenfolge auf.","Schreibt hinter jeden Schritt, welcher Begriff aus dem Rätsel dazu passt (z. B. „D = Cloud, Digitalisierung“)."], mat:["M3-2"], p:"Reihenfolge + Begriff zu jedem Schritt"},
-  {t:"Erklär-Post", f:"allein", steps:["Wähle einen der 7 Begriffe.","Gestalte eine Folie im Stil einer Insta-Story nach der Vorlage: Begriff · Erklärung in <b>deinen eigenen Worten</b> (max. 2 Sätze) · Beispiel aus deinem Leben · ein Bild.","Zeige den Post deiner Lehrkraft."], mat:["M3-3"], p:"Erklär-Post"}
+  {t:"Escape-Rätsel lösen", f:"partner", steps:["Scrollt nach unten zu den 7 Stationen.","Lest bei jeder Station zuerst den Infotext, dann beantwortet die Frage.","Schreibt zu jedem der 7 Begriffe eine Erklärung in <b>einem</b> eigenen Satz in euer Heft.","Notiert das Lösungswort – eure Lehrkraft fragt es beim Code ab."], bsp:"Cloud: Meine Daten liegen nicht auf dem Handy, sondern auf Servern im Internet.", mat:["M3-1"], p:"7 Begriffe mit je 1 Satz + Lösungswort"},
+  {t:"Der Weg deiner Online-Bestellung", f:"partner", steps:["Öffnet die Karten „Der Weg deiner Online-Bestellung“. Die 7 Schritte sind durcheinander.","Bringt sie in die richtige Reihenfolge – von der Suche in der App bis zur Haustür. Schreibt die Buchstaben auf.","Schreibt hinter jeden Schritt, welcher Begriff aus dem Rätsel dazu passt."], bsp:"B – E-Commerce, Online-Plattform", mat:["M3-2"], p:"Reihenfolge + Begriff zu jedem Schritt"},
+  {t:"Erklär-Post", f:"allein", steps:["Wähle einen der 7 Begriffe.","Gestalte eine Folie im Stil einer Insta-Story nach der Vorlage: Begriff · Erklärung in <b>deinen eigenen Worten</b> (max. 2 Sätze) · Beispiel aus deinem Leben · ein Bild (Foto, Zeichnung oder KI-Bild).","Speichere den Post in deinem digitalen Heft."], mat:["M3-3"], p:"Erklär-Post"},
+  {t:"Begriffe-Tabu", f:"plenum", steps:["Deine Lehrkraft zeigt einen Begriff aus dem Rätsel – aber nur eine Person sieht ihn.","Diese Person erklärt den Begriff, <b>ohne</b> das Wort zu sagen. Die Klasse rät.","Danach: Verbessere im Heft eine deiner 7 Erklärungen, wenn dir eine bessere eingefallen ist."], p:"1 verbesserte Erklärung"}
+ ],
+ extra:[
+  {t:"Stillstand im Autowerk", x:"Ein Lkw mit Autositzen steht im Stau. Schreibe als Schichtleiter eine kurze Nachricht (3 Sätze) an den Chef: Was ist passiert? Warum steht das Band? Was kostet das?"},
+  {t:"Plattformen in meinem Alltag", x:"Finde 3 Online-Plattformen, die du oder deine Familie nutzen. Schreibe zu jeder: Wer ist der <b>Anbieter</b>, wer ist der <b>Kunde</b>?"},
+  {t:"Eigene Quizfragen", x:"Schreibe 3 Quizfragen mit je 3 Antworten zu den Begriffen. Tausche mit einem anderen Team und löst gegenseitig."}
  ],
  netz:["Digitalisierung","Just-in-Time","E-Commerce","Online-Plattform","Cloud","Investitionskosten"],
  arg:"Macht die Digitalisierung unser Leben besser? Halte ein Argument fest."
 },
 {
- id:"m4", teil:1, nr:4, emo:"🃏", title:"Firmen-Quartett",
+ id:"m4", teil:1, nr:4, emo:"🃏", title:"Firmen-Quartett", widget:"firma",
  leitfrage:"Wer arbeitet für wen? Konzerne, Mittelstand und Hidden Champions",
  info:`<ul>
 <li><b>Internationaler Konzern</b> = ein sehr großes Unternehmen mit Standorten in vielen Ländern und oft über 100.000 Beschäftigten. Beispiele aus München: BMW, Siemens, Allianz.</li>
 <li><b>Mittelstand</b> = kleine und mittlere Unternehmen, oft <b>Familienunternehmen</b>. Die meisten Menschen in Deutschland arbeiten im Mittelstand – und er bildet viele Azubis aus.</li>
 <li><b>Hidden Champion</b> („heimlicher Weltmeister“) = ein Mittelständler, der in einer <b>Nische</b> (einem kleinen Spezialgebiet) Weltmarktführer ist, den aber kaum jemand kennt. Beispiel: ARRI aus München baut Filmkameras, mit denen viele Kinofilme gedreht werden.</li></ul>`,
  tasks:[
-  {t:"Quiz: Was stellt diese Firma her?", f:"plenum", steps:["Deine Lehrkraft zeigt Firmennamen.","Rate mit: Was stellt diese Firma her oder was bietet sie an?"]},
-  {t:"Firma auswählen und recherchieren", f:"partner", steps:["Wählt eine Firma aus der Liste – oder eine andere Firma aus München oder eurer Umgebung.","Tragt eure Firma in die Liste an der Tafel ein. Jede Firma darf nur einmal vorkommen.","Sucht auf der Website der Firma die Infos für die Quartettkarte (meist unter „Über uns“ oder „Karriere“)."], mat:["M4-1","M4-2"], p:"Alle Infos für die Karte"},
-  {t:"Quartettkarte gestalten", f:"partner", steps:["Gestaltet eure Karte nach der Vorlage in eurem digitalen Heft.","Nutzt ein eigenes Symbol – kein echtes Firmenlogo kopieren.","Schreibt die „Superkraft“ in einem ganzen Satz."], mat:["M4-2"], p:"Quartettkarte"},
-  {t:"Quartett spielen", f:"gruppe", steps:["Zwei oder drei Teams setzen sich zusammen.","Spielt mit euren Karten: Eine Person nennt eine Eigenschaft (z. B. „Beschäftigte“) – der höhere Wert gewinnt.","Besprecht danach: Welche Firma bietet Ausbildungsplätze in eurer Nähe? Würdet ihr lieber in einem Konzern oder im Mittelstand arbeiten – und warum?"]}
+  {t:"Konzern, Mittelstand oder Hidden Champion?", f:"allein", steps:["Lies das Info-Häppchen oben.","Löse das Sortierspiel weiter unten, bis alle 9 Firmen grün sind.","Schreibe die drei Begriffe in dein Heft und erkläre jeden in <b>einem eigenen Satz</b> mit einem Beispiel aus dem Spiel."], bsp:"Ein Hidden Champion ist ein Mittelständler, der in einer Nische Weltmarktführer ist, zum Beispiel ARRI.", p:"Sortierspiel 9 von 9 + 3 Erklärsätze"},
+  {t:"Firma auswählen und recherchieren", f:"partner", steps:["Wählt eine Firma aus der Liste – oder eine andere Firma aus eurer Umgebung.","Tragt eure Firma an der Tafel ein. Jede Firma darf nur einmal vorkommen.","Sucht auf der Website der Firma die Infos für die Quartettkarte (meist unter „Über uns“, „Unternehmen“ oder „Karriere“).","Findet ihr eine Zahl nicht? Schreibt „nicht gefunden“ und sucht weiter bei der nächsten Zeile."], mat:["M4-1","M4-2"], p:"Notizen zu allen Zeilen der Karte"},
+  {t:"Quartettkarte gestalten", f:"partner", steps:["Gestaltet eure Karte nach der Vorlage in eurem digitalen Heft.","Nutzt ein eigenes Symbol – kein echtes Firmenlogo kopieren.","Schreibt die „Superkraft“ in einem ganzen Satz."], bsp:"Superkraft: Mit Kameras von ARRI werden viele große Kinofilme gedreht.", mat:["M4-2"], p:"Quartettkarte"},
+  {t:"Quartett spielen", f:"gruppe", steps:["Setzt euch mit ein oder zwei anderen Teams zusammen, die auch fertig sind.","Spielt mit euren Karten: Eine Person nennt eine Eigenschaft (z. B. „Beschäftigte“) – der höhere Wert gewinnt.","Schreibt danach jede/r zwei Sätze: <i>„Ich würde lieber bei … arbeiten, weil …“</i> und <i>„In meiner Nähe bildet … aus, zum Beispiel als …“</i>"], p:"2 Sätze"}
+ ],
+ extra:[
+  {t:"Ausbildung in meiner Nähe", x:"Suche 3 Firmen in deinem Wohnort oder deiner Umgebung, die ausbilden. Notiere: Firma – Konzern oder Mittelstand? – ein Ausbildungsberuf."},
+  {t:"Karten vergleichen", x:"Nimm zwei Quartettkarten aus der Klasse und schreibe 3 Vergleichssätze mit „größer als“, „älter als“ oder „in mehr Ländern als“."},
+  {t:"Für Fünftklässler erklärt", x:"Warum heißt ein Hidden Champion „heimlicher Weltmeister“? Erkläre es in 2 Sätzen so, dass es ein Kind aus der 5. Klasse versteht."}
  ],
  netz:["Konzern","Mittelstand","Hidden Champion"],
  arg:"Ist es besser, bei einem großen Konzern oder bei einem Mittelständler zu arbeiten? Halte ein Argument fest."
@@ -539,11 +573,18 @@ const MISSIONS = [
  leitfrage:"Wie hängt mein Alltag mit der ganzen Welt zusammen?",
  info:`<p><b>Globalisierung</b> = die Welt wächst zusammen. Waren, Geld, Informationen und Menschen bewegen sich über Ländergrenzen hinweg – möglich durch Containerschiffe, Flugzeuge und das Internet.</p><p>Viele Produkte entstehen in einer <b>Lieferkette</b>: Rohstoffe kommen aus einem Land, Teile aus einem zweiten, zusammengebaut wird in einem dritten. Viele dieser Länder sind <b>Schwellenländer</b> – Länder auf dem Weg vom armen Land zum Industrieland, z. B. China, Indien, Brasilien, die Türkei oder Malaysia.</p>`,
  tasks:[
-  {t:"Suchbild: Ein ganz normales Zimmer", f:"partner", steps:["Schaut euch das Suchbild weiter unten genau an.","Tippt auf alle Dinge, die mit anderen Ländern zu tun haben. Es sind 10.","Schreibt zu jedem Gegenstand auf: <b>Gegenstand – Land</b>."], p:"Liste mit 10 Gegenständen und Ländern"},
-  {t:"Was ist Globalisierung?", f:"partner", steps:["Schaut den kurzen Erklärfilm.","Schreibt eine eigene Erklärung in 2 Sätzen: <i>„Globalisierung bedeutet, dass … Man sieht das zum Beispiel an …“</i>"], mat:["M5-1","M5-2"], p:"Eigene Erklärung in 2 Sätzen"},
-  {t:"Die Weltreise eines Smartphones", f:"partner", steps:["Schaut euch das Schaubild zur Lieferkette an. Wer mehr wissen will, spielt das Level „Rohstoffe“ bei Handycrash.","Legt eine Tabelle an: <b>Station | Land | Was passiert dort?</b>","Markiert: Welche dieser Länder sind Schwellenländer?"], mat:["M5-3","M5-4"], p:"Tabelle mit 5 Stationen"},
-  {t:"Gewinner oder Verlierer?", f:"partner", steps:["Lest alle 5 Rollenkarten.","Zeichnet eine lange Linie: links „verliert durch Globalisierung“, rechts „gewinnt durch Globalisierung“.","Ordnet alle 5 Personen auf der Linie ein.","Begründet bei <b>zwei</b> Personen eure Entscheidung in je einem Satz: <i>„… steht links/rechts, weil …“</i>"], mat:["M5-5"], p:"Linie mit 5 Personen + 2 Begründungen"},
-  {t:"Gegenüberstellung: Chancen und Risiken", f:"partner", steps:["Legt eine Tabelle mit zwei Spalten an: <b>Chancen der Globalisierung</b> | <b>Risiken der Globalisierung</b>.","Schreibt in jede Spalte mindestens 4 Punkte. Denkt an: Preise · Arbeitsplätze in Deutschland · Arbeitsbedingungen in anderen Ländern · Umwelt · Schwellenländer.","Für Schnelle: Lest die Zusatzkarte zum Nuss-Nougat-Glas und vergleicht mit dem Smartphone."], mat:["M5-5","M5-6"], p:"Gegenüberstellung mit je 4 Punkten"}
+  {t:"Suchbild: Ein ganz normales Zimmer", f:"partner", steps:["Schaut euch das Suchbild weiter unten genau an.","Tippt auf alle Dinge, die mit anderen Ländern zu tun haben. Es sind 10.","Schreibt zu jedem Gegenstand auf: <b>Gegenstand – Land</b>."], bsp:"Bananen – Ecuador", p:"Liste mit 10 Gegenständen und Ländern"},
+  {t:"Was ist Globalisierung?", f:"allein", steps:["Schau den kurzen Erklärfilm mit Kopfhörern – oder lies den Lexikon-Text.","Schreibe eine eigene Erklärung in 2 Sätzen nach dem Beispiel."], bsp:"Globalisierung bedeutet, dass Waren, Geld und Menschen über Ländergrenzen gehen. Man sieht das zum Beispiel an meinem Handy, das aus Teilen aus vielen Ländern besteht.", mat:["M5-1","M5-2"], p:"Eigene Erklärung in 2 Sätzen"},
+  {t:"Die Weltreise eines Smartphones", f:"partner", steps:["Schaut euch das Schaubild zur Lieferkette an.","Legt eine Tabelle an: <b>Station | Land | Was passiert dort?</b> – mit allen 5 Stationen.","Markiert die Länder, die Schwellenländer sind (siehe Info-Häppchen)."], mat:["M5-3"], p:"Tabelle mit 5 Stationen"},
+  {t:"Gewinner oder Verlierer?", f:"partner", steps:["Lest alle 5 Rollenkarten.","Zeichnet eine lange Linie: links „verliert durch Globalisierung“, rechts „gewinnt durch Globalisierung“.","Ordnet alle 5 Personen auf der Linie ein.","Begründet bei <b>zwei</b> Personen eure Entscheidung in je einem Satz."], bsp:"Joseph steht ganz links, weil er gefährlich arbeitet und nicht zur Schule gehen kann.", mat:["M5-5"], p:"Linie mit 5 Personen + 2 Begründungen"},
+  {t:"Gegenüberstellung: Chancen und Risiken", f:"partner", steps:["Legt eine Tabelle mit zwei Spalten an: <b>Chancen der Globalisierung</b> | <b>Risiken der Globalisierung</b>.","Schreibt in jede Spalte mindestens 4 Punkte. Denkt an: Preise · Arbeitsplätze in Deutschland · Arbeitsbedingungen in anderen Ländern · Umwelt · Schwellenländer."], mat:["M5-5","M5-3"], p:"Gegenüberstellung mit je 4 Punkten"},
+  {t:"Meinungslinie im Klassenzimmer", f:"plenum", steps:["Deine Lehrkraft stellt die Frage: <i>„Ist die Globalisierung gut für uns in Deutschland?“</i>","Stell dich auf eine Linie im Raum: ganz links „nein“, ganz rechts „ja“.","Begründe deinen Platz mit einem Punkt aus deiner Gegenüberstellung.","Schreibe danach deinen Satz in den Argumente-Speicher."], p:"1 Argument im Argumente-Speicher"}
+ ],
+ extra:[
+  {t:"Made in …", x:"Schau auf die Etiketten von 3 Kleidungsstücken (deine eigenen oder im Klassenzimmer). Notiere: Kleidungsstück – „Made in …“ – Kontinent."},
+  {t:"Die Weltreise eines Glases", x:"Lies die Zusatzkarte zur Nuss-Nougat-Creme. Zeichne die Weltreise des Glases als Pfeilkette mit allen Zutaten und Ländern."},
+  {t:"Ein Brief von Li", x:"Schreibe aus Sicht einer Person von den Rollenkarten einen kurzen Brief (4 Sätze) an jemanden in Deutschland, der sich gerade ein neues Smartphone kauft."},
+  {t:"Handycrash", x:"Spiele bei Handycrash das Level „Rohstoffe“ und notiere 2 Dinge, die du dabei gelernt hast."}
  ],
  netz:["Globalisierung","Lieferkette","Schwellenland"],
  arg:"Ist die Globalisierung gut für uns in Deutschland? Halte ein Argument fest."
@@ -553,10 +594,16 @@ const MISSIONS = [
  leitfrage:"Bin ich fit für die Kurzprobe zu Teil 1?",
  info:`<p>Hier wiederholst du Teil 1. Mach den Selbsttest so oft du willst. Prüfe dann dein Begriffsnetz: Jeder Begriff aus Teil 1 sollte mindestens <b>eine Verbindung</b> haben.</p>`,
  tasks:[
-  {t:"Selbsttest", f:"allein", steps:["Mach den Selbsttest unten.","Wiederhole ihn, bis du alle 10 Fragen richtig hast."]},
-  {t:"Begriffsnetz erklären", f:"partner", steps:["Öffnet beide euer Begriffsnetz.","Erklärt euch gegenseitig je drei Verbindungen.","Kann dein Partner sie verstehen? Wenn nicht: Verbindung verbessern."]},
-  {t:"Quiz mit der ganzen Klasse", f:"plenum", steps:["Deine Lehrkraft startet ein Quiz."]},
-  {t:"Kurzprobe 1", f:"allein", steps:["Tablet weglegen. Viel Erfolg! 🍀"]}
+  {t:"Selbsttest", f:"allein", steps:["Mach den Selbsttest unten.","Schreibe jede Frage, die du beim ersten Versuch falsch hattest, mit der richtigen Antwort in dein Heft.","Wiederhole den Test, bis du alle 10 Fragen richtig hast."], p:"Test 10 von 10 + Liste deiner Fehler"},
+  {t:"Mein Lernzettel", f:"allein", steps:["Öffne das Begriffsnetz → Lernkarten.","Geh alle Begriffe aus Teil 1 durch. Kannst du sie erklären? Dann setze den Haken „kann ich erklären“.","Begriffe ohne Haken: Lies die Erklärung und schreibe sie mit einem eigenen Beispiel in dein Heft.","Speichere deinen Lernzettel als PDF."], p:"Lernzettel-PDF + Begriffe ohne Haken im Heft"},
+  {t:"Begriffsnetz erklären", f:"partner", steps:["Öffnet beide euer Begriffsnetz.","Erklärt euch gegenseitig je drei Verbindungen.","Prüft beim Partner: Sind beide Begriffe richtig verwendet? Gibt es ein Beispiel?","Verbessert mindestens <b>eine</b> eigene Verbindung."], p:"1 verbesserte Verbindung"},
+  {t:"Quiz mit der ganzen Klasse", f:"plenum", steps:["Deine Lehrkraft startet ein Quiz.","Notiere danach eine Frage, die du nicht wusstest, mit der richtigen Antwort."], p:"1 Frage mit Antwort"},
+  {t:"Kurzprobe 1", f:"plenum", steps:["Deine Lehrkraft sagt, wann es losgeht.","Tablet weglegen. Viel Erfolg! 🍀"]}
+ ],
+ extra:[
+  {t:"Probenfragen erfinden", x:"Schreibe 3 Fragen, die in der Kurzprobe drankommen könnten – mit Lösung. Lass sie von deinem Partner beantworten."},
+  {t:"Ohne Spicken", x:"Schreibe die Stufen Arbeit 1.0 bis 4.0 mit je 2 Stichworten auswendig auf. Kontrolliere danach mit Mission 2."},
+  {t:"Escape-Rätsel", x:"Löse das Escape-Rätsel aus Mission 3 noch einmal – diesmal ohne die Infotexte zu lesen."}
  ],
  netz:[], arg:null
 },
@@ -565,22 +612,33 @@ const MISSIONS = [
  leitfrage:"In welchen Bereichen arbeiten die Menschen – und wie hat sich das verändert?",
  info:`<p>Die Wirtschaft wird in <b>Sektoren</b> (Bereiche) eingeteilt: <b>primär</b> (Rohstoffe gewinnen), <b>sekundär</b> (herstellen), <b>tertiär</b> (Dienstleistungen) und – in manchen Modellen – <b>quartär</b> (Information und Wissen).</p><p><b>Tertiarisierung</b> heißt: Immer mehr Menschen arbeiten im Dienstleistungssektor. Um 1950 arbeitete noch etwa jede vierte Person in der Landwirtschaft – heute ist es nur noch etwa eine von hundert.</p>`,
  tasks:[
-  {t:"Sektoren kennenlernen + Sortierspiel", f:"partner", steps:["Lest die Karten „Die Wirtschaftssektoren“.","Löst das Sortierspiel weiter unten, bis alle 12 Berufe richtig sind.","Achtung bei den Streitfällen: Hier sind zwei Antworten richtig. Lest die Erklärung!"], mat:["M7-1","M7-4"]},
-  {t:"Klassen-Umfrage: Unsere Wunschberufe", f:"plenum", steps:["Jede/r nennt seinen Wunschberuf. Deine Lehrkraft schreibt ihn an die Tafel.","Gemeinsam ordnet ihr jeden Beruf einem Sektor zu.","Zählt: In welchem Sektor liegen die meisten Wunschberufe? Passt das zum Diagramm für Deutschland?"], p:"Ergebnis der Klasse in eurem Heft"},
-  {t:"Diagramm verstehen", f:"partner", steps:["Schaut euch das Diagramm an (grau = 1950, orange = heute).","Schreibt zu jedem Sektor einen Satz: <i>„Im … Sektor arbeiteten 1950 … %, heute sind es nur noch / schon … %.“</i>","Schreibt einen Schlusssatz: <i>„Das Diagramm zeigt die Tertiarisierung, weil …“</i>","Schaut den Film zur Tertiarisierung und ergänzt einen Grund, <b>warum</b> der Dienstleistungssektor wächst."], mat:["M7-2","M7-3"], p:"4 Sätze + 1 Grund"},
-  {t:"Familien-Check", f:"zuhause", steps:["Frag zu Hause: In welchem Beruf haben deine Großeltern gearbeitet? Und deine Eltern oder andere Verwandte?","Ordne jeden Beruf einem Sektor zu.","Schreibe einen Satz: Passt das zur Tertiarisierung?"], p:"Kleine Tabelle + 1 Satz"}
+  {t:"Sektoren kennenlernen + Sortierspiel", f:"partner", steps:["Lest die Karten „Die Wirtschaftssektoren“.","Löst das Sortierspiel weiter unten, bis alle 12 Berufe richtig sind. Achtung bei den Streitfällen: Hier sind zwei Antworten richtig – lest die Erklärung!","Legt im Heft eine Tabelle mit 4 Spalten an (primär · sekundär · tertiär · quartär) und schreibt in jede Spalte 3 Berufe."], mat:["M7-1","M7-4"], p:"Sortierspiel 12 von 12 + Tabelle mit 12 Berufen"},
+  {t:"Diagramm verstehen", f:"partner", steps:["Schaut euch das Diagramm an (grau = 1950, orange = heute).","Schreibt zu jedem Sektor einen Satz nach dem Beispiel.","Schreibt einen Schlusssatz: <i>„Das Diagramm zeigt die Tertiarisierung, weil …“</i>","Schaut den Film zur Tertiarisierung (Kopfhörer) und ergänzt einen Grund, <b>warum</b> der Dienstleistungssektor wächst."], bsp:"Im primären Sektor arbeiteten 1950 etwa 25 %, heute sind es nur noch etwa 1 %.", mat:["M7-2","M7-3"], p:"4 Sätze + 1 Grund"},
+  {t:"Klassen-Umfrage: Unsere Wunschberufe", f:"plenum", steps:["<b>Schon vorher vorbereiten:</b> Schreibe deinen Wunschberuf und den passenden Sektor auf.","Jede/r nennt seinen Wunschberuf. Deine Lehrkraft schreibt ihn an die Tafel, ihr ordnet gemeinsam zu.","Übertrage das Ergebnis in dein Heft und schreibe einen Satz: Passt unsere Klasse zum Diagramm für Deutschland?"], p:"Klassenergebnis + 1 Satz"},
+  {t:"Familien-Check", f:"zuhause", steps:["Frag zu Hause: In welchem Beruf haben deine Großeltern gearbeitet? Und deine Eltern oder andere Verwandte?","Mach eine Tabelle: <b>Person | Beruf | Sektor</b>.","Schreibe einen Satz: Passt das zur Tertiarisierung?"], p:"Kleine Tabelle + 1 Satz"}
+ ],
+ extra:[
+  {t:"Ganz neue Berufe", x:"Finde 3 Berufe, die es vor 30 Jahren noch nicht gab (z. B. auf planet-beruf.de). Ordne jeden einem Sektor zu."},
+  {t:"Ohne Bauern geht nichts", x:"Nur noch etwa 1 von 100 Menschen arbeitet im primären Sektor. Warum brauchen wir ihn trotzdem? Schreibe 2 Sätze."},
+  {t:"Mein eigenes Diagramm", x:"Zeichne das Ergebnis eurer Klassen-Umfrage als Säulendiagramm (auf Papier oder am Tablet)."}
  ],
  netz:["Primärer Sektor","Sekundärer Sektor","Tertiärer Sektor","Quartärer Sektor","Tertiarisierung"],
  arg:"Brauchen wir in Zukunft noch Industrie- und Handwerksberufe? Halte ein Argument fest."
 },
 {
- id:"m8", teil:2, nr:8, emo:"🔧", title:"Werkstatt früher – heute",
+ id:"m8", teil:2, nr:8, emo:"🔧", title:"Werkstatt früher – heute", widget:"werk",
  leitfrage:"Was muss eine Fachkraft heute können – und was früher?",
  info:`<p>Technik verändert, was Fachkräfte können müssen. Im Schulbuch steht das Beispiel aus der Metallbearbeitung: vom <b>Handrad</b> über die <b>Steuerung</b> per Computer bis zum <b>Bearbeitungszentrum</b>. In dieser Mission schaust du dir den gleichen Wandel in einem Beruf an, den du kennst: in der <b>Autowerkstatt</b>.</p><p>Die Folge ist überall gleich: <b>weniger Personal</b>, aber <b>besser ausgebildet</b>. Deine <b>Qualifikation</b> – also das, was du gelernt hast und kannst – wird immer wichtiger.</p>`,
  tasks:[
-  {t:"Bildvergleich früher – heute", f:"plenum", steps:["Deine Lehrkraft zeigt das Schaubild „Früher – heute“.","Beschreibt gemeinsam: Was ist gleich geblieben? Was hat sich verändert? Wer arbeitet mit den Händen, wer mit dem Computer?"], mat:["M8-1"]},
-  {t:"Text lesen und Tabelle ausfüllen", f:"partner", steps:["Lest den Text „Vom Kfz-Mechaniker zum Kfz-Mechatroniker“.","Schaut euch dazu das Video zur Kfz-Mechatroniker-Ausbildung an.","Übertragt die Tabelle „früher – heute“ in euer Heft und füllt alle 5 Zeilen aus."], mat:["M8-2","M8-3","M8-4"], p:"Ausgefüllte Tabelle"},
+  {t:"Früher, heute oder beides?", f:"allein", steps:["Lies das Info-Häppchen oben.","Löse das Sortierspiel weiter unten: Gehört die Tätigkeit zur Werkstatt von <b>früher</b>, von <b>heute</b> oder zu <b>beiden</b>? Mach weiter, bis alle 10 grün sind.","Schreibe 2 Tätigkeiten von heute in dein Heft und erkläre bei jeder, was man dafür können muss."], bsp:"Software-Update im Auto: Man muss sich mit Computern und Programmen auskennen.", p:"Sortierspiel 10 von 10 + 2 Tätigkeiten mit Erklärung"},
+  {t:"Text lesen und Tabelle ausfüllen", f:"partner", steps:["Lest den Text „Vom Kfz-Mechaniker zum Kfz-Mechatroniker“.","Schaut euch dazu das Video zur Kfz-Mechatroniker-Ausbildung an (Kopfhörer).","Übertragt die Tabelle „früher – heute“ in euer Heft und füllt alle 5 Zeilen aus."], mat:["M8-2","M8-3","M8-4"], p:"Ausgefüllte Tabelle"},
+  {t:"Bildvergleich: Handrad bis Bearbeitungszentrum", f:"plenum", steps:["Deine Lehrkraft zeigt das Schaubild „Früher – heute“.","Beschreibt gemeinsam: Was ist gleich geblieben? Was hat sich verändert? Wer arbeitet mit den Händen, wer mit dem Computer?","Schreibe danach 3 Unterschiede in dein Heft."], mat:["M8-1"], p:"3 Unterschiede"},
   {t:"Was bedeutet das?", f:"partner", steps:["Schreibt drei ganze Sätze mit diesen Satzanfängen:","<i>„Heute muss ein Kfz-Mechatroniker auch … können, weil …“</i>","<i>„Auch in der Industrie hat sich die Arbeit verändert: Früher …, heute …“</i>","<i>„Für Menschen ohne Ausbildung bedeutet das, dass …“</i>"], mat:["M8-1","M8-2"], p:"3 Sätze"}
+ ],
+ extra:[
+  {t:"Noch ein Beruf im Wandel", x:"Such dir auf planet-beruf.de einen anderen Beruf aus, der sich durch Technik verändert hat (z. B. Landwirt/in, Bankkaufmann/-frau, Tischler/in). Mach eine Mini-Tabelle früher – heute mit 3 Zeilen."},
+  {t:"Handrad in 2 Sätzen", x:"Erkläre den Unterschied zwischen Handrad und Bearbeitungszentrum in 2 Sätzen – ohne ins Material zu schauen."},
+  {t:"Werkstatt 2040", x:"Erstelle ein KI-Bild einer Autowerkstatt im Jahr 2040. Schreibe 3 Dinge auf, die dort anders sind als heute."}
  ],
  netz:["Facharbeiter","Bearbeitungszentrum","Qualifikation"],
  arg:"Macht die Technik die Arbeit für Fachkräfte leichter oder schwerer? Halte ein Argument fest."
@@ -596,11 +654,16 @@ const MISSIONS = [
 <li><b>3D-Drucker</b>: bauen Gegenstände Schicht für Schicht.</li></ul>
 <p>In dieser Mission stellt ihr im Team eine <b>aktuelle</b> Innovation vor.</p>`,
  tasks:[
-  {t:"Einstieg: Was ist eine Innovation?", f:"plenum", steps:["Schaut gemeinsam das Video von MrWissen2go.","Sammelt: Was macht eine Erfindung zu einer Innovation?"], mat:["M9-1"]},
+  {t:"Was ist eine Innovation?", f:"plenum", steps:["Ihr schaut gemeinsam das Video von MrWissen2go.","Sammelt: Was macht eine Erfindung zu einer Innovation?","Schreibe einen Satz: <i>„Eine Innovation ist …“</i>"], mat:["M9-1"], p:"1 Satz"},
   {t:"Thema finden und recherchieren", f:"partner", steps:["Bildet 2er- oder 3er-Teams.","Wählt eine aktuelle Innovation aus der Ideenliste – oder eine eigene.","Recherchiert und notiert Stichpunkte zu 3 Fragen: <b>Was ist das?</b> · <b>Wo wird es eingesetzt?</b> · <b>Welche Berufe verändern sich dadurch oder entstehen neu?</b>"], mat:["M9-2","M9-4"], p:"Thema + Stichpunkte zu 3 Fragen"},
-  {t:"Themen-Check bei der Lehrkraft", f:"lehrkraft", steps:["Kommt mit eurem Thema und euren Stichpunkten zu eurer Lehrkraft.","Stellt in 1 Minute vor, was ihr herausgefunden habt.","Erst wenn eure Lehrkraft „Okay“ sagt, dürft ihr mit der Präsentation starten."]},
+  {t:"Themen-Check bei der Lehrkraft", f:"lehrkraft", steps:["Kommt mit eurem Thema und euren Stichpunkten zu eurer Lehrkraft.","Stellt in 1 Minute vor, was ihr herausgefunden habt.","Wenn ihr warten müsst: Fangt schon mit Folie 1 (Titel und Bild) an.","Wenn eure Lehrkraft „Okay“ sagt, macht ihr die ganze Präsentation."], p:"Okay der Lehrkraft"},
   {t:"Kurzpräsentation erstellen", f:"partner", steps:["Erstellt 3–4 Folien nach der Vorlage (Bilder dürfen auch KI-Bilder sein).","Schreibt in eigenen Worten – nicht einfach kopieren.","Verteilt: Wer sagt was? Jede/r im Team spricht.","Übt einmal: höchstens 3 Minuten."], mat:["M9-3"], p:"Präsentation (3–4 Folien)"},
-  {t:"Erfindermesse: Präsentieren und abstimmen", f:"plenum", steps:["Jedes Team präsentiert (2–3 Minuten).","Stimmt am Ende ab: Was ist die <b>Innovation des Jahres</b>?","Schreibe einen Begründungssatz: <i>„Ich wähle …, weil … Zum Beispiel …“</i>"], p:"1 Begründungssatz"}
+  {t:"Erfindermesse: Präsentieren und abstimmen", f:"plenum", steps:["Jedes Team präsentiert (2–3 Minuten).","Notiere bei jeder Präsentation: <b>Innovation – ein Beruf, der sich verändert</b>.","Stimmt am Ende ab: Was ist die <b>Innovation des Jahres</b>?","Schreibe einen Begründungssatz: <i>„Ich wähle …, weil … Zum Beispiel …“</i>"], p:"Notizen zu allen Präsentationen + 1 Begründungssatz"}
+ ],
+ extra:[
+  {t:"Hightech bei mir zu Hause", x:"Suche zu Hause einen Gegenstand mit Keramik, Carbon oder Nanotechnik (z. B. Keramikmesser, Fahrradhelm, Sonnencreme). Schreibe: Gegenstand – Werkstoff – Was ist der Vorteil?"},
+  {t:"Fragen an ein anderes Team", x:"Bereite 2 Fragen an ein anderes Team vor, die du nach seiner Präsentation stellen willst."},
+  {t:"Werkhalle 2040", x:"Erstelle ein KI-Bild einer Werkhalle im Jahr 2040. Beschreibe in 3 Sätzen, wer oder was dort arbeitet."}
  ],
  netz:["Innovation","Verbundwerkstoff (Carbon)","Nanotechnologie","Cobot","3D-Druck"],
  arg:"Nehmen Roboter und neue Techniken uns die Arbeit weg – oder machen sie sie besser? Halte ein Argument fest."
@@ -616,23 +679,36 @@ const MISSIONS = [
 <li>Lager & Logistik: KI plant Routen und Lagerplätze.</li></ul>
 <p>Der <b>Job-Futuromat</b> zeigt, welcher Anteil der Tätigkeiten in einem Beruf <b>technisch</b> schon heute automatisiert werden könnte (<b>Automatisierbarkeit</b>). Er sagt aber <b>nicht</b> voraus, ob ein Beruf verschwindet.</p>`,
  tasks:[
-  {t:"Futuromat-Check", f:"allein", steps:["Öffne den Job-Futuromat und gib deinen Wunschberuf ein.","Notiere: den Prozentwert · zwei Tätigkeiten, die automatisierbar sind · zwei Tätigkeiten, die es nicht sind."], mat:["M10-1"], p:"Futuromat-Notizen"},
-  {t:"Kritisch hinterfragen", f:"partner", steps:["Vergleicht eure Ergebnisse.","Diskutiert: <i>Bedeutet ein hoher Wert, dass ich in diesem Beruf keine Arbeit finde?</i> Lest dazu den letzten Absatz im Info-Häppchen.","Schreibt eure Antwort in einem Satz auf."], mat:["M10-2"], p:"1 Antwortsatz"},
+  {t:"Futuromat-Check", f:"allein", steps:["Öffne den Job-Futuromat und gib deinen Wunschberuf ein.","Notiere: den Prozentwert · zwei Tätigkeiten, die automatisierbar sind · zwei Tätigkeiten, die es nicht sind."], bsp:"Mein Beruf: … – … % – automatisierbar: Bestellungen schreiben, … – nicht automatisierbar: Kunden beraten, …", mat:["M10-1"], p:"Futuromat-Notizen"},
+  {t:"Kritisch hinterfragen", f:"partner", steps:["Vergleicht eure Ergebnisse: Wer hat den höchsten, wer den niedrigsten Wert?","Lest den letzten Absatz im Info-Häppchen.","Beantwortet die Frage in 2 Sätzen: <i>Bedeutet ein hoher Wert, dass ich in diesem Beruf keine Arbeit finde?</i>"], bsp:"Nein, denn der Futuromat zeigt nur, was technisch möglich wäre. Ob eine Firma wirklich …", mat:["M10-2"], p:"2 Antwortsätze"},
   {t:"KI-Bild mit Klischee-Check", f:"allein", steps:["Erstelle mit dem KI-Bildtool ein Bild mit dem Prompt aus der Vorlage.","Füll die Klischee-Check-Tabelle aus: Welches Geschlecht, welches Alter, welches Aussehen hat die KI gewählt? Ist der Arbeitsplatz realistisch?","Schreibe 2 Sätze: Ist das ein Klischee? Woher könnte es kommen?"], mat:["M10-4","M10-3"], p:"KI-Bild + Tabelle + 2 Sätze"},
-  {t:"Steckbrief „Mein Beruf & KI“", f:"allein", steps:["Schreibe drei Abschnitte in ganzen Sätzen:","1. Das könnte KI in meinem Wunschberuf übernehmen: …","2. Das bleibt menschlich: …","3. Das muss ich dafür lernen: …"], mat:["M10-2"], p:"Steckbrief"}
+  {t:"Steckbrief „Mein Beruf & KI“", f:"allein", steps:["Schreibe drei Abschnitte mit je mindestens 2 ganzen Sätzen:","1. Das könnte KI in meinem Wunschberuf übernehmen: …","2. Das bleibt menschlich, weil …","3. Das muss ich dafür lernen: …"], mat:["M10-2"], p:"Steckbrief mit 3 Abschnitten"},
+  {t:"Klischee-Galerie", f:"plenum", steps:["Einige KI-Bilder werden am Board gezeigt.","Sprecht darüber: Welche Klischees kommen oft vor?","Schreibe einen Satz: <i>„Wenn ich KI-Bilder nutze, achte ich darauf, dass …“</i>"], p:"1 Satz"}
+ ],
+ extra:[
+  {t:"Die KI prüfen", x:"Frag ein KI-Tool: „Welche Aufgaben kann KI im Beruf [dein Wunschberuf] übernehmen?“ Markiere in der Antwort eine Aussage, die stimmt, und eine, bei der du unsicher bist. Wo könntest du das nachprüfen?"},
+  {t:"Drei Berufe im Vergleich", x:"Gib 3 Berufe in den Futuromat ein (z. B. deinen, einen aus dem Handwerk, einen aus der Pflege). Mach eine Tabelle und schreibe einen Satz zum Vergleich."},
+  {t:"Regeln für KI", x:"Schreibe 2 Regeln für einen fairen KI-Einsatz in einer Firma, z. B. „KI darf …, aber …“."}
  ],
  netz:["Künstliche Intelligenz","Automatisierbarkeit"],
  arg:"Ist KI eher eine Chance oder eine Gefahr für meinen Wunschberuf? Halte ein Argument fest."
 },
 {
- id:"m11", teil:2, nr:11, emo:"🛟", title:"Wer ist gefährdet?",
+ id:"m11", teil:2, nr:11, emo:"🛟", title:"Wer ist gefährdet?", widget:"risiko",
  leitfrage:"Wer verliert leicht seine Arbeit – und wie kann ich vorbeugen?",
  info:`<p><b>Arbeitslos</b> ist, wer arbeiten möchte, aber keine Stelle findet und bei der Agentur für Arbeit gemeldet ist.</p><p>Das Risiko hängt stark von der <b>Qualifikation</b> ab: Von den Menschen <b>ohne</b> Berufsabschluss ist mehr als jede/r Fünfte arbeitslos – mit Ausbildung oder Studium sind es nur etwa 3 von 100.</p><p>Vorbeugen kann man mit einem <b>Abschluss</b>, <b>lebenslangem Lernen</b>, <b>Flexibilität</b> und <b>Mobilität</b>.</p>`,
  tasks:[
-  {t:"Das Schaubild lesen", f:"plenum", steps:["Schaut euch gemeinsam das Schaubild zur Arbeitslosigkeit an.","Beantwortet: Wer hat das größte Risiko? Wie viel größer ist es ungefähr?"], mat:["M11-1"]},
+  {t:"Das Schaubild lesen", f:"allein", steps:["Schau dir das Schaubild zur Arbeitslosigkeit an.","Beantworte in deinem Heft in ganzen Sätzen: 1. Welche Gruppe hat das größte Risiko? 2. Wie viele von 100 Menschen ohne Abschluss sind ungefähr arbeitslos? 3. Wie viel Mal größer ist das Risiko als mit Ausbildung?"], bsp:"Menschen ohne Berufsabschluss haben das größte Risiko, arbeitslos zu sein.", mat:["M11-1"], p:"3 Antwortsätze"},
+  {t:"Risiko höher oder niedriger?", f:"allein", steps:["Löse das Sortierspiel weiter unten, bis alle 10 Karten grün sind.","Schreibe 2 Dinge, die das Risiko <b>senken</b>, in dein Heft und erkläre jeweils mit „weil …“."], p:"Sortierspiel 10 von 10 + 2 Erklärungen"},
   {t:"Risiko-Check: Vier Personen", f:"partner", steps:["Lest die Karten der vier Personen und den Infotext „So kann man vorbeugen“.","Übertragt die Risiko-Check-Tabelle in euer Heft und füllt sie für alle vier Personen aus (ja / nein / teilweise).","Entscheidet für jede Person: Risiko <b>hoch</b>, <b>mittel</b> oder <b>niedrig</b>.","Bringt die vier Personen in eine Reihenfolge – vom höchsten zum niedrigsten Risiko."], mat:["M11-2","M11-3","M11-4"], p:"Ausgefüllte Tabelle + Reihenfolge"},
-  {t:"Ratschläge in ganzen Sätzen", f:"partner", steps:["Schreibt für <b>jede</b> Person einen Ratschlag aus <b>mindestens zwei ganzen Sätzen</b>. Nutzt die Satzbausteine.","Jeder Ratschlag muss sagen: <b>Was</b> soll die Person tun? <b>Warum</b> hilft das? <b>Was</b> wäre ein konkreter erster Schritt?","Beispiel: <i>„Sofia sollte sich bei der Agentur für Arbeit beraten lassen und eine neue Ausbildung suchen, weil Menschen ohne Abschluss viel öfter arbeitslos sind. Ein erster Schritt wäre, auf planet-beruf.de drei Berufe herauszusuchen, die zu ihr passen.“</i>","Nutzt in euren Ratschlägen mindestens drei dieser Begriffe: Qualifikation · lebenslanges Lernen · Flexibilität · Mobilität · Routine."], mat:["M11-3","M11-4","M11-5"], p:"4 Ratschläge mit je mind. 2 Sätzen"},
-  {t:"Ratgeber für die 7. Klasse", f:"gruppe", steps:["Zwei Teams setzen sich zusammen.","Erstellt einen Ratgeber „So schützt du dich vor Arbeitslosigkeit“ mit 5 Tipps – als Comic, Plakat oder 60-Sekunden-Video.","Jeder Tipp hat eine Überschrift und einen erklärenden Satz.","So einfach, dass es ein 13-Jähriger versteht."], mat:["M11-3","M11-6"], p:"Ratgeber"}
+  {t:"Ratschläge in ganzen Sätzen", f:"partner", steps:["Schreibt für <b>jede</b> Person einen Ratschlag aus <b>mindestens zwei ganzen Sätzen</b>. Nutzt die Satzbausteine.","Jeder Ratschlag muss sagen: <b>Was</b> soll die Person tun? <b>Warum</b> hilft das? <b>Was</b> wäre ein konkreter erster Schritt?","Nutzt in euren Ratschlägen mindestens drei dieser Begriffe: Qualifikation · lebenslanges Lernen · Flexibilität · Mobilität · Routine."], bsp:"Sofia sollte sich bei der Agentur für Arbeit beraten lassen und eine neue Ausbildung suchen, weil Menschen ohne Abschluss viel öfter arbeitslos sind. Ein erster Schritt wäre, auf planet-beruf.de drei Berufe herauszusuchen, die zu ihr passen.", mat:["M11-3","M11-4","M11-5"], p:"4 Ratschläge mit je mind. 2 Sätzen"},
+  {t:"Ratgeber für die 7. Klasse", f:"gruppe", steps:["Setzt euch mit einem anderen Team zusammen, das auch so weit ist.","Erstellt einen Ratgeber „So schützt du dich vor Arbeitslosigkeit“ mit 5 Tipps – als Comic, Plakat oder 60-Sekunden-Video.","Jeder Tipp hat eine Überschrift und einen erklärenden Satz.","So einfach, dass es ein 13-Jähriger versteht."], mat:["M11-3","M11-6"], p:"Ratgeber"},
+  {t:"Ratgeber-Ausstellung", f:"plenum", steps:["Die Ratgeber werden gezeigt.","Wähle den Tipp aus, der dich am meisten überzeugt, und schreibe ihn in den Argumente-Speicher."], p:"1 Tipp im Argumente-Speicher"}
+ ],
+ extra:[
+  {t:"Was bleibt vom Lohn?", x:"Jonas verdient 1.800 € netto im Monat. Arbeitslosengeld I ist etwa 60 % davon. Rechne aus, wie viel Geld er dann hat, und schreibe auf, worauf er verzichten müsste."},
+  {t:"Mein Plan B", x:"Wenn es mit deinem Wunschberuf nicht klappt: Welcher zweite Beruf passt zu dir? Schau auf planet-beruf.de und schreibe 2 Sätze, warum."},
+  {t:"Weiterbildung finden", x:"Such im Internet eine Weiterbildung, die Aylin helfen könnte (z. B. ein Kurs zu einem Computerprogramm). Notiere: Name des Kurses – wie lange – was lernt man dort?"}
  ],
  netz:["Arbeitslosigkeit","Lebenslanges Lernen","Flexibilität","Mobilität","Minijob / Leiharbeit"],
  arg:"Ist eine abgeschlossene Ausbildung heute wichtiger als früher? Halte ein Argument fest."
@@ -642,10 +718,17 @@ const MISSIONS = [
  leitfrage:"Chance oder Gefahr? Bin ich fit für Kurzprobe 2?",
  info:`<p>Zum Abschluss debattiert ihr die große Frage:</p><p class="leitfrage">„${CONFIG.leitfrageDebatte}“</p><p>Nutze deinen <b>Argumente-Speicher</b>. Ein gutes Argument hat drei Teile: <b>Behauptung – Begründung – Beispiel</b>. Danach wiederholst du Teil 2 mit dem Selbsttest.</p>`,
  tasks:[
-  {t:"Argumente vorbereiten", f:"allein", steps:["Öffne deinen Argumente-Speicher.","Deine Lehrkraft teilt dich der Pro- oder der Kontra-Seite zu.","Such dir die zwei stärksten Argumente für deine Seite heraus und prüfe: Hat jedes Behauptung, Begründung und Beispiel?"], mat:["M12-1"]},
-  {t:"Pro-Kontra-Debatte", f:"plenum", steps:["Lies die Debattenregeln.","Beide Seiten tragen abwechselnd je ein Argument vor.","Wenn du im Publikum bist: Notiere das stärkste Argument jeder Seite."], mat:["M12-1"]},
-  {t:"Selbsttest", f:"allein", steps:["Mach den Selbsttest unten, bis du alle 10 Fragen richtig hast."]},
-  {t:"Kurzprobe 2", f:"allein", steps:["Tablet weglegen. Viel Erfolg! 🍀"]}
+  {t:"Argumente für beide Seiten", f:"allein", steps:["Öffne deinen Argumente-Speicher.","Du erfährst erst in der Debatte, auf welcher Seite du stehst. Bereite deshalb <b>zwei Pro-</b> und <b>zwei Kontra-Argumente</b> vor.","Jedes Argument hat drei Teile: <b>Behauptung – Begründung – Beispiel</b>."], bsp:"Behauptung: Technik macht die Arbeit leichter. Begründung: Roboter übernehmen schwere Arbeiten. Beispiel: In der Pflege helfen Exoskelette beim Heben.", mat:["M12-1"], p:"4 Argumente mit je 3 Teilen"},
+  {t:"Argument-Check", f:"partner", steps:["Tauscht eure Argumente aus.","Prüft beim Partner jedes Argument: Gibt es Behauptung, Begründung <b>und</b> Beispiel? Ist das Beispiel konkret?","Verbessert danach euer schwächstes Argument."], p:"1 verbessertes Argument"},
+  {t:"Pro-Kontra-Debatte", f:"plenum", steps:["Lies vorher die Debattenregeln.","Deine Lehrkraft teilt die Seiten ein. Beide Seiten tragen abwechselnd je ein Argument vor.","Wenn du im Publikum bist: Notiere das stärkste Argument jeder Seite."], mat:["M12-1"], p:"Das stärkste Argument jeder Seite"},
+  {t:"Selbsttest", f:"allein", steps:["Mach den Selbsttest unten.","Schreibe jede Frage, die du beim ersten Versuch falsch hattest, mit der richtigen Antwort in dein Heft.","Wiederhole den Test, bis du alle 10 Fragen richtig hast."], p:"Test 10 von 10 + Liste deiner Fehler"},
+  {t:"Mein Lernzettel", f:"allein", steps:["Öffne das Begriffsnetz → Lernkarten.","Geh alle Begriffe aus Teil 2 durch und setze den Haken „kann ich erklären“, wo es klappt.","Begriffe ohne Haken: Schreibe die Erklärung mit einem eigenen Beispiel in dein Heft.","Speichere deinen Lernzettel als PDF."], p:"Lernzettel-PDF"},
+  {t:"Kurzprobe 2", f:"plenum", steps:["Deine Lehrkraft sagt, wann es losgeht.","Tablet weglegen. Viel Erfolg! 🍀"]}
+ ],
+ extra:[
+  {t:"Einleitung für eine Erörterung", x:"Schreibe eine Einleitung (3 Sätze) für eine Erörterung zur Debattenfrage: Hinführung zum Thema – Leitfrage – Überleitung. Das hilft dir auch in Deutsch!"},
+  {t:"Gegenargument entkräften", x:"Nimm das stärkste Argument der Gegenseite und schreibe 2 Sätze, warum es nicht ganz stimmt: <i>„Zwar …, aber …“</i>"},
+  {t:"Probenfragen erfinden", x:"Schreibe 3 Fragen zu Teil 2, die in der Kurzprobe drankommen könnten – mit Lösung."}
  ],
  netz:[], arg:"Welches Argument aus der Debatte hat dich am meisten überzeugt? Halte es fest."
 }
@@ -694,6 +777,58 @@ const SORT = [
  {b:"YouTuberin", acc:["Q","T"], fb:"Streitfall! Information und Unterhaltung → quartär oder tertiär."}
 ];
 
+const SORTS = {
+ zeit:{title:"🧩 Zeitstrahl-Puzzle: Welche Stufe?", cats:{"1":"1.0","2":"2.0","3":"3.0","4":"4.0"}, items:[
+  {b:"Eine Dampfmaschine treibt die Webstühle in der Fabrik an.", acc:["1"], fb:"Dampfmaschine = Arbeit 1.0."},
+  {b:"Kinder arbeiten 12 Stunden am Tag in einer Fabrik.", acc:["1"], fb:"Kinderarbeit gab es vor allem in der Zeit der ersten Fabriken (1.0)."},
+  {b:"Viele Menschen ziehen vom Land in die Stadt, um in einer Fabrik zu arbeiten.", acc:["1"], fb:"Mit den ersten Fabriken (1.0) entstehen die großen Industriestädte."},
+  {b:"Henry Ford lässt Autos am Fließband bauen.", acc:["2"], fb:"Fließband ab 1913 = Arbeit 2.0."},
+  {b:"Elektromotoren treiben die Maschinen an.", acc:["2"], fb:"Strom kommt mit Arbeit 2.0 in die Fabriken."},
+  {b:"Jeder Arbeiter macht den ganzen Tag denselben Handgriff.", acc:["2"], fb:"Arbeitsteilung am Fließband = Massenproduktion (2.0)."},
+  {b:"Ein Industrieroboter schweißt Autoteile zusammen.", acc:["3"], fb:"Roboter in der Fabrik = Automatisierung (3.0)."},
+  {b:"Im Büro ersetzt der Computer die Schreibmaschine.", acc:["3"], fb:"Computer im Büro = Arbeit 3.0."},
+  {b:"Eine Firma lässt ihre Turnschuhe in Asien nähen, weil es dort billiger ist.", acc:["3","4"], fb:"Die Globalisierung beginnt mit Arbeit 3.0 – und geht heute weiter. Beides ist richtig."},
+  {b:"Eine Maschine meldet über das Internet selbst, dass ein Teil bald kaputtgeht.", acc:["4"], fb:"Vernetzte Maschinen = Arbeit 4.0."},
+  {b:"Eine KI schreibt einen Entwurf für eine E-Mail.", acc:["4"], fb:"Künstliche Intelligenz = Arbeit 4.0."},
+  {b:"Ein Fahrer bekommt seine Lieferaufträge über eine App.", acc:["4"], fb:"Online-Plattformen = Arbeit 4.0."}
+ ]},
+ firma:{title:"🧩 Konzern, Mittelstand oder Hidden Champion?", cats:{K:"Konzern",M:"Mittelstand",H:"Hidden Champion"}, items:[
+  {b:"Siemens: Technik für Industrie und Züge, über 300.000 Beschäftigte, in fast allen Ländern der Welt", acc:["K"], fb:"Riesig und weltweit = Konzern."},
+  {b:"Allianz: Versicherungen, rund 150.000 Beschäftigte in vielen Ländern", acc:["K"], fb:"Sehr groß, viele Länder = Konzern."},
+  {b:"Adidas: Sportschuhe und -kleidung, rund 60.000 Beschäftigte weltweit", acc:["K"], fb:"Weltweit bekannt und sehr groß = Konzern."},
+  {b:"Eine Bäckerei mit 3 Filialen in deinem Landkreis, 25 Beschäftigte", acc:["M"], fb:"Kleines Familienunternehmen = Mittelstand."},
+  {b:"Eine Schreinerei, Familienbetrieb mit 12 Beschäftigten und 2 Azubis", acc:["M"], fb:"Kleines Handwerksunternehmen = Mittelstand."},
+  {b:"Ein Autohaus in deiner Stadt mit 40 Beschäftigten", acc:["M"], fb:"Mittelgroßes Unternehmen vor Ort = Mittelstand."},
+  {b:"ARRI aus München: Mit seinen Filmkameras werden viele große Kinofilme auf der ganzen Welt gedreht", acc:["H","M"], fb:"Hidden Champion! Kaum jemand kennt den Namen, aber in seiner Nische ist ARRI weltweit vorne. (Mittelstand ist auch richtig.)"},
+  {b:"Rational aus Landsberg: Weltmarktführer für Profi-Kochgeräte in Restaurantküchen", acc:["H","M"], fb:"Hidden Champion – Weltmarktführer in einer Nische. (Mittelstand ist auch richtig.)"},
+  {b:"BarthHaas aus Nürnberg: handelt mit Hopfen – rund jede dritte Flasche Bier weltweit enthält seinen Hopfen", acc:["H","M"], fb:"Hidden Champion – heimlicher Weltmeister im Hopfenhandel. (Mittelstand ist auch richtig.)"}
+ ]},
+ werk:{title:"🧩 Werkstatt: früher, heute oder beides?", cats:{F:"früher",H:"heute",B:"beides"}, items:[
+  {b:"Am Motorgeräusch hören, was kaputt ist", acc:["F"], fb:"Früher war das die wichtigste Methode. Heute hilft das Diagnosegerät."},
+  {b:"Den Fehlerspeicher mit einem Laptop auslesen", acc:["H"], fb:"Heute haben Autos viele kleine Computer (Steuergeräte)."},
+  {b:"Ein Software-Update für das Auto aufspielen", acc:["H"], fb:"Moderne Autos brauchen Updates wie ein Handy."},
+  {b:"Kameras und Sensoren für den Spurhalte-Assistenten einstellen", acc:["H"], fb:"Assistenzsysteme gibt es erst in modernen Autos."},
+  {b:"An der Drehmaschine das Werkzeug mit dem Handrad bewegen", acc:["F"], fb:"Handrad = früher. Heute steuert ein Computerprogramm (CNC) die Maschine."},
+  {b:"Ein Programm für ein Bearbeitungszentrum schreiben", acc:["H"], fb:"Das Bearbeitungszentrum arbeitet nach einem Programm."},
+  {b:"Einen Vergaser von Hand einstellen", acc:["F"], fb:"Vergaser gibt es in modernen Autos nicht mehr – heute regelt die Elektronik."},
+  {b:"Bremsbeläge wechseln", acc:["B"], fb:"Das muss man früher wie heute können."},
+  {b:"Kunden erklären, was repariert werden muss", acc:["B"], fb:"Mit Menschen sprechen bleibt immer wichtig."},
+  {b:"An einem Elektroauto unter Hochspannung sicher arbeiten", acc:["H"], fb:"Dafür braucht man heute eine eigene Schulung."}
+ ]},
+ risiko:{title:"🧩 Macht das das Risiko, arbeitslos zu werden, höher oder niedriger?", cats:{U:"⬆️ höher",D:"⬇️ niedriger"}, items:[
+  {b:"keinen Berufsabschluss haben", acc:["U"], fb:"Ohne Abschluss ist mehr als jede/r Fünfte arbeitslos."},
+  {b:"eine abgeschlossene Ausbildung haben", acc:["D"], fb:"Mit Ausbildung sind nur etwa 3 von 100 arbeitslos."},
+  {b:"jeden Tag nur die gleichen einfachen Handgriffe machen", acc:["U"], fb:"Routinearbeit können Maschinen leichter übernehmen."},
+  {b:"regelmäßig Kurse und Weiterbildungen besuchen", acc:["D"], fb:"Lebenslanges Lernen hält dich auf dem neuesten Stand."},
+  {b:"bereit sein, für eine Stelle in eine andere Stadt zu ziehen", acc:["D"], fb:"Mobilität = mehr Stellen, aus denen man wählen kann."},
+  {b:"auch Schicht- oder Wochenendarbeit annehmen", acc:["D"], fb:"Flexibilität erhöht die Chancen."},
+  {b:"sich mit Computerprogrammen gut auskennen", acc:["D"], fb:"Digitale Kenntnisse werden fast überall gebraucht."},
+  {b:"die Firma testet gerade Roboter für genau meine Aufgabe", acc:["U"], fb:"Die eigene Tätigkeit könnte bald automatisiert werden."},
+  {b:"nur einen befristeten Vertrag als Leiharbeiter haben", acc:["U"], fb:"Leiharbeit und befristete Verträge enden leichter."},
+  {b:"Deutsch und noch eine weitere Sprache gut sprechen", acc:["D"], fb:"Sprachen sind eine wichtige Qualifikation."}
+ ]}
+};
+
 const QUIZ1 = [
  {q:"Welche Tätigkeit ist Erwerbsarbeit?", o:["Ein Vater kocht für seine Kinder.","Eine Pflegekraft arbeitet im Krankenhaus.","Ein Jugendtrainer trainiert ehrenamtlich die U12."], r:1, e:"Erwerbsarbeit wird bezahlt."},
  {q:"Was bedeutet Ehrenamt?", o:["Freiwillige Arbeit ohne Bezahlung für andere","Ein besonders gut bezahlter Job","Arbeit nur für Beamte"], r:0, e:"Ehrenamt = freiwillig und unbezahlt."},
@@ -723,8 +858,8 @@ const FORM = {plenum:"👥 ganze Klasse", gruppe:"👨‍👩‍👧 Gruppe (2 T
 
 /* ===================== SPEICHER ===================== */
 const KEY = "missionArbeitswelt_v1";
-let S = {name:"", tasks:{}, done:{}, escape:{}, such:{}, sort:{}, quiz:{}, conns:[], args:[]};
-function load(){ try{ const r = localStorage.getItem(KEY); if(r){ S = Object.assign(S, JSON.parse(r)); } }catch(e){} }
+let S = {name:"", tasks:{}, done:{}, escape:{}, such:{}, sort:{}, sorts:{}, quiz:{}, conns:[], args:[]};
+function load(){ try{ const r = localStorage.getItem(KEY); if(r){ S = Object.assign(S, JSON.parse(r)); } }catch(e){} if(!S.v2){ S.tasks={}; S.v2=1; } }
 function save(){ try{ localStorage.setItem(KEY, JSON.stringify(S)); }catch(e){} }
 load();
 try{ if(navigator.storage && navigator.storage.persist) navigator.storage.persist(); }catch(e){}
@@ -806,7 +941,7 @@ function bindKarte(){
   const nm=$("#nmok"); if(nm) nm.onclick=()=>{ const v=$("#nm").value.trim(); if(v){ S.name=v; save(); render(); } };
   $("#gkok").onclick=()=>{ const v=$("#gk").value.trim().toUpperCase(); if(v===CONFIG.generalschluessel.toUpperCase()){ MISSIONS.forEach(m=>S.done[m.id]=true); save(); toast("🔓 Alle Missionen freigeschaltet"); render(); } else toast("Code falsch"); };
   $("#bkdown").onclick=()=>{ S.lastBackup=Date.now(); save(); const nm=(S.name||"schueler").replace(/[^A-Za-z0-9ÄÖÜäöüß_-]/g,""); downloadFile(`mission-arbeitswelt-${nm}-${new Date().toISOString().slice(0,10)}.json`, JSON.stringify(S,null,1), "application/json"); toast("💾 Sicherung gespeichert"); render(); };
-  $("#bkup").onchange=e=>{ const f=e.target.files[0]; if(!f) return; const r=new FileReader(); r.onload=()=>{ try{ const d=JSON.parse(r.result); if(!d || typeof d!=="object" || !("done" in d)) throw 0; confirmBox("Sicherung laden? Dein aktueller Stand auf diesem Tablet wird dadurch ersetzt.",()=>{ S=Object.assign({name:"", tasks:{}, done:{}, escape:{}, such:{}, sort:{}, quiz:{}, conns:[], args:[]}, d); save(); toast("📂 Sicherung geladen"); render(); }); }catch(err){ toast("Das ist keine gültige Sicherungsdatei."); } }; r.readAsText(f); };
+  $("#bkup").onchange=e=>{ const f=e.target.files[0]; if(!f) return; const r=new FileReader(); r.onload=()=>{ try{ const d=JSON.parse(r.result); if(!d || typeof d!=="object" || !("done" in d)) throw 0; confirmBox("Sicherung laden? Dein aktueller Stand auf diesem Tablet wird dadurch ersetzt.",()=>{ S=Object.assign({name:"", tasks:{}, done:{}, escape:{}, such:{}, sort:{}, sorts:{}, quiz:{}, conns:[], args:[]}, d); if(!S.v2){ S.tasks={}; S.v2=1; } save(); toast("📂 Sicherung geladen"); render(); }); }catch(err){ toast("Das ist keine gültige Sicherungsdatei."); } }; r.readAsText(f); };
   $("#reset").onclick=()=>confirmBox("Wirklich ALLES löschen? Dein Fortschritt, dein Begriffsnetz und deine Argumente sind dann weg.", ()=>{ try{localStorage.removeItem(KEY);}catch(e){} location.reload(); });
 }
 
@@ -817,8 +952,10 @@ function missionView(m){
   <div class="card"><div class="mhead ${m.teil===2?"t2":""}"><span class="pill t${m.teil}">Teil ${m.teil} · Mission ${m.nr}</span>${done?'<span class="pill" style="background:#e2f3e9;color:#1d5e39">✅ geschafft</span>':""}
   <h2>${m.emo} ${m.title}</h2><div class="leitfrage">${m.leitfrage}</div></div></div>
   <div class="card"><h3 style="margin-top:0">💡 Info-Häppchen</h3><div class="info">${m.info}</div></div>`;
-  h += `<div class="card"><h3 style="margin-top:0">✅ Deine Aufgaben</h3><p class="small muted">Arbeite die Aufgaben der Reihe nach ab. Bei jeder Aufgabe steht, mit wem du arbeitest und welches Material du brauchst. Tippe auf ein Material, um es zu öffnen.</p>` + m.tasks.map((t,i)=>{ const k=m.id+"_"+i, c=!!S.tasks[k];
-    return `<div class="task ${c?"checked":""}"><div class="thead"><input type="checkbox" data-k="${k}" ${c?"checked":""} aria-label="erledigt"><div><span class="tt">${i+1}. ${t.t}</span><span class="form ${t.f}">${FORM[t.f]}</span></div></div><div class="tbody"><ol class="steps">${t.steps.map(s=>`<li>${s}</li>`).join("")}</ol>${t.mat&&t.mat.length?`<div class="matrow"><span class="lbl">📎 Material:</span>${t.mat.map(matChip).join("")}</div>`:""}${t.p?`<div class="produkt">${t.p}</div>`:""}</div></div>`; }).join("") + `</div>`;
+  h += `<div class="card"><h3 style="margin-top:0">✅ Deine Aufgaben</h3><div class="howto"><b>So arbeitest du:</b><ul><li>Arbeite die Aufgaben <b>in deinem Tempo</b> der Reihe nach ab und hake jede ab, wenn das Ergebnis (📦) fertig ist.</li><li><b>📍 Treffpunkte</b> machen wir mit der ganzen Klasse. Deine Lehrkraft ruft euch dazu. <b>Warte nicht darauf</b> – überspringe den Treffpunkt und mach mit der nächsten Aufgabe weiter.</li><li>Alle Aufgaben fertig? Dann wähle einen <b>🚀 Extra-Auftrag</b> ganz unten.</li><li>Du kommst nicht weiter? 1. Aufgabe nochmal lesen · 2. Material öffnen · 3. dein Team fragen · 4. dann die Lehrkraft.</li></ul></div>` + m.tasks.map((t,i)=>{ const k=m.id+"_"+i, c=!!S.tasks[k];
+    const tr=t.f==="plenum";
+    return `<div class="task ${tr?"treff":""} ${c?"checked":""}"><div class="thead"><input type="checkbox" data-k="${k}" ${c?"checked":""} aria-label="erledigt"><div><span class="tt">${i+1}. ${tr?"📍 Treffpunkt: ":""}${t.t}</span><span class="form ${t.f}">${FORM[t.f]}</span></div></div>${tr?`<div class="treffhint">⏸️ Das machen wir gemeinsam, wenn deine Lehrkraft ruft. Bis dahin: <b>Mach mit der nächsten Aufgabe weiter.</b></div>`:""}<div class="tbody"><ol class="steps">${t.steps.map(s=>`<li>${s}</li>`).join("")}</ol>${t.bsp?`<div class="bsp"><b>✍️ So kann es aussehen:</b> <i>${t.bsp}</i></div>`:""}${t.mat&&t.mat.length?`<div class="matrow"><span class="lbl">📎 Material:</span>${t.mat.map(matChip).join("")}</div>`:""}${t.p?`<div class="produkt">${t.p}</div>`:""}</div></div>`; }).join("") + `</div>`;
+  if(m.extra&&m.extra.length) h += `<div class="card extra"><h3 style="margin-top:0">🚀 Schon fertig? Extra-Aufträge</h3><p class="small muted">Du hast alle Aufgaben erledigt – oder wartest auf einen Treffpunkt? Such dir einen Extra-Auftrag aus und schreibe das Ergebnis in dein Heft. Extra-Aufträge sind freiwillig.</p>${m.extra.map(e=>`<div class="xtra"><span class="xt">${e.t}</span><div>${e.x}</div></div>`).join("")}</div>`;
   if(m.widget) h += `<div class="card" id="widget"></div>`;
   if(mats.length){ h += `<div class="card"><h3 style="margin-top:0">📚 Material zu dieser Mission</h3><div class="matlist">${mats.filter(x=>x.url).map(matCard).join("")}</div>${mats.filter(x=>!x.url).map(matCard).join("")}</div>`; }
   if(m.netz.length) h += `<div class="card"><div class="netzbox ${m.teil===2?"t2":""}"><b>🕸️ Neu in deinem Begriffsnetz:</b><div class="chips">${m.netz.map(t=>`<span>${t}</span>`).join("")}</div><div class="small">Öffne das Begriffsnetz und verbinde <b>mindestens zwei</b> neue Begriffe mit Begriffen, die du schon hast. Schreibe immer dazu, <b>wie</b> sie zusammenhängen.</div>${(()=>{ const all=netzTerms().flatMap(g=>g.terms); const d=offeneDenk(all).filter(([a,b])=>m.netz.includes(a)||m.netz.includes(b)).slice(0,3); return d.length?`<div class="small" style="margin-top:8px"><b>💡 Zum Beispiel:</b></div><div class="denk" style="margin-top:4px">${d.map(([a,b])=>`<button data-mq="${esc(a)}|${esc(b)}">Wie hängen <b>${esc(a)}</b> und <b>${esc(b)}</b> zusammen?</button>`).join("")}</div>`:""; })()}<button class="btn ghost" id="goNetz" style="margin-top:8px">Zum Begriffsnetz →</button></div></div>`;
@@ -843,7 +980,7 @@ function bindMission(m){
     if(CONFIG.codesAktiv){ const v=($("#code").value||"").trim().toUpperCase(); if(v!==CONFIG.codes[m.id].toUpperCase() && v!==CONFIG.generalschluessel.toUpperCase()){ msg.className="msg err"; msg.textContent="Der Code stimmt nicht."; return; } }
     S.done[m.id]=true; save(); toast("🎉 Mission geschafft! Die nächste ist offen."); render();
   };
-  if(m.widget){ const w=$("#widget"); ({escape:wEscape, suchbild:wSuch, sortier:wSort, quiz1:()=>wQuiz(w,QUIZ1,"q1"), quiz2:()=>wQuiz(w,QUIZ2,"q2")})[m.widget](w); }
+  if(m.widget){ const w=$("#widget"); ({escape:wEscape, suchbild:wSuch, sortier:wSort, zeit:()=>wSortGen(w,"zeit"), firma:()=>wSortGen(w,"firma"), werk:()=>wSortGen(w,"werk"), risiko:()=>wSortGen(w,"risiko"), quiz1:()=>wQuiz(w,QUIZ1,"q1"), quiz2:()=>wQuiz(w,QUIZ2,"q2")})[m.widget](w); }
 }
 
 function materialView(){
@@ -881,12 +1018,24 @@ function wSuch(w){
 /* --------- Widget: Sortierspiel --------- */
 function wSort(w){
   const names={P:"1. primär",S:"2. sekundär",T:"3. tertiär",Q:"4. quartär"};
-  let h = `<h3 style="margin-top:0">🧩 Sortierspiel: Welcher Sektor?</h3><div class="sortgrid">` + SORT.map((s,i)=>{ const a=S.sort[i]; const ok=a && s.acc.includes(a);
+  let h = `<h3 style="margin-top:0">🧩 Sortierspiel: Welcher Sektor?</h3><div class="sortgrid">` + SORT.map((_,i)=>i).sort((x,y)=>((x*7+3)%SORT.length)-((y*7+3)%SORT.length)).map(i=>{ const s=SORT[i]; const a=S.sort[i]; const ok=a && s.acc.includes(a);
     return `<div class="sortitem ${a?(ok?"right":"wrong"):""}"><b>${s.b}</b><div class="bn">${["P","S","T","Q"].map(k=>`<button data-i="${i}" data-k="${k}" ${a===k?'style="font-weight:700;border-color:#1f2430"':""}>${names[k]}</button>`).join("")}</div>${a?`<div class="fb">${ok?"✔ "+s.fb:"✘ Versuch es noch einmal."}</div>`:""}</div>`; }).join("") + `</div>`;
   const right = SORT.filter((s,i)=>S.sort[i] && s.acc.includes(S.sort[i])).length;
   h += `<p class="msg ${right===SORT.length?"ok":""}">${right} von ${SORT.length} richtig</p>`;
   w.innerHTML = h;
   w.querySelectorAll(".bn button").forEach(b=>b.onclick=()=>{ S.sort[b.dataset.i]=b.dataset.k; save(); wSort(w); });
+}
+
+function wSortGen(w,key){
+  const D=SORTS[key]; S.sorts=S.sorts||{}; const st=S.sorts[key]=S.sorts[key]||{};
+  const ks=Object.keys(D.cats);
+  const n=D.items.length, ord=D.items.map((_,i)=>i).sort((x,y)=>((x*7+3)%n)-((y*7+3)%n));
+  let h=`<h3 style="margin-top:0">${D.title}</h3><div class="sortgrid">`+ord.map(i=>{ const s=D.items[i]; const a=st[i]; const ok=a&&s.acc.includes(a);
+    return `<div class="sortitem ${a?(ok?"right":"wrong"):""}"><b>${s.b}</b><div class="bn">${ks.map(k=>`<button data-i="${i}" data-k="${k}" ${a===k?'style="font-weight:700;border-color:#1f2430"':""}>${D.cats[k]}</button>`).join("")}</div>${a?`<div class="fb">${ok?"✔ "+s.fb:"✘ Versuch es noch einmal."}</div>`:""}</div>`; }).join("")+`</div>`;
+  const right=D.items.filter((s,i)=>st[i]&&s.acc.includes(st[i])).length;
+  h+=`<p class="msg ${right===D.items.length?"ok":""}">${right} von ${D.items.length} richtig${right===D.items.length?" – super! 🎉":""}</p>`;
+  w.innerHTML=h;
+  w.querySelectorAll(".bn button").forEach(b=>b.onclick=()=>{ st[b.dataset.i]=b.dataset.k; save(); wSortGen(w,key); });
 }
 
 /* --------- Widget: Quiz (eine Frage nach der anderen) --------- */
